@@ -1,13 +1,33 @@
 baseURL = "https://outlook-pst-archive-help.pages.dev/"
 languageCode = "en-us"
-title = "Classic Outlook PST Archive Help"
+title = "Outlook PST Archive Help"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 [params]
-template_version = "v1.1.0"
-description = "Archive a classic Outlook PST locally, preserve folders, and verify the archive opens."
-category = "PC & Mac"
 source = "outlook-pst-archive-help"
+description = "Remote help exporting a classic Outlook PST and verifying folders, email counts, and attachments from a copy."
 email = "hello@handytasklab.com"
+fallback_email_subject = "Outlook PST archive help"
+fallback_email_fields = ["Outlook and Windows version", "Original PST path/size", "Folders missing", "Attachment examples"]
+og_image = "images/social.jpg"
+footer_line = "Remote help for one device at a time."
+latest_kicker = "FROM THE BLOG"
+latest_title = "Outlook PST Archive Help Guides"
+theme_bg = "#EAF1F8"
+theme_surface = "#F3F7FB"
+theme_card = "#FFFFFF"
+theme_ink = "#182018"
+theme_muted = "#5D655F"
+theme_accent = "#213E65"
+theme_accent_ink = "#FFFFFF"
+theme_deep = "#232425"
+theme_deep_ink = "#FFFFFF"
+theme_header_ink = "#182018"
+theme_line = "#D0D5D7"
+theme_link = "#14263F"
+theme_scrim = "rgba(8,12,16,0.86)"
+theme_light = true
+hero_desktop_hd_width = 1920
+hero_mobile_hd_width = 768
 [markup.goldmark.renderer]
 unsafe = true

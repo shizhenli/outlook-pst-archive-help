@@ -1,17 +1,44 @@
-﻿---
-title: "Outlook PST Export Missing Folders: Check the Scope"
-description: "A practical first-pass check for Classic Outlook PST Archive Help."
-date: 2026-11-13
-draft: true
 ---
-<p>A PST export is only as complete as the selected root. I verify folder count and open the archive before handover.</p>
-<h2>1. Reproduce the exact failure</h2>
-<p>Write down what works, what does not, and the last change. Test from the same device and network where the problem happens. A second device is useful only as a comparison, not as proof.</p>
-<h2>2. Check the layer before the app</h2>
-<p>Confirm the host is reachable, the account or device is allowed, and the local client can see the service. Then test the app setting. Changing three layers at once makes the result impossible to interpret.</p>
-<h2>3. Make one change and retest</h2>
-<p>Record the old value, apply one change, retest, and keep the result. If the change does not fix it, roll it back before trying the next path.</p>
-<h2>4. Handover test</h2>
-<p>Repeat the successful test after a restart or reconnect. A fix that only works in the current session is not ready for handover.</p>
-<p><a href="/">Back to the service page</a> 路 <a href="mailto:hello@handytasklab.com?subject=Classic%20Outlook%20PST%20Archive%20Help%20question&body=Source%3A%20outlook-pst-archive-help">Ask about this exact symptom</a></p>
+title: 'Outlook PST Export Missing Folders: Check the Root and Subfolders'
+description: Compare an Outlook PST folder tree, message counts, and attachments against the source before trusting the archive.
+seo_title: Outlook PST Missing Folders? Verify the Export Root
+seo_description: Compare an Outlook PST folder tree, message counts, and attachments against the source before trusting the archive.
+keywords:
+- outlook pst missing folders
+- outlook pst export missing emails
+- verify pst archive
+date: '2026-11-13'
+draft: false
+categories:
+- Email Archive
+category_slug: email-archive
+---
 
+<p>A PST can open successfully and still omit nested folders if the export started at the wrong level. Compare the tree before deleting or moving the source.</p>
+<h2>Before you start</h2><ul>
+<li>Classic Outlook on Windows</li>
+<li>A copy of the PST and its original path</li>
+<li>Access to the source mailbox/folder tree</li>
+<li>Enough free space for a second export</li>
+</ul>
+<h2>Step-by-step checks</h2>
+<h3>Step 1: Preserve the original</h3>
+<p>Copy the PST to a working drive and mark the original read-only. Record its size and the Outlook profile that opens it.</p>
+<p><strong>Check:</strong> The working copy opens without modifying the original file.</p>
+<h3>Step 2: Map the expected tree</h3>
+<p>Write down the mailbox root and the nested folders you expect. Include sent, archive, and project subfolders rather than only the inbox.</p>
+<p><strong>Check:</strong> The expected tree has a root and at least one nested branch.</p>
+<h3>Step 3: Inspect the PST tree</h3>
+<p>Open the copy in Outlook and expand every level. Compare folder names and counts with the written map; note missing branches and date gaps.</p>
+<p><strong>Check:</strong> Every expected top-level and nested folder is accounted for.</p>
+<h3>Step 4: Re-export the missing branch</h3>
+<p>If a branch is missing, repeat the export from the mailbox root or the exact parent folder. Do not merge blindly into the existing PST.</p>
+<p><strong>Check:</strong> The new export contains the missing branch and its parent.</p>
+<h3>Step 5: Open messages and attachments</h3>
+<p>Open representative emails from each branch and save/open attachments. Confirm dates, sender, body, and file readability.</p>
+<p><strong>Check:</strong> A sample from every branch opens with its attachment.</p>
+<h2>Verify the result</h2>
+<p>The PST tree matches the written map, message counts are plausible for the selected range, and sample attachments open from the copy.</p>
+<h2>Rollback</h2>
+<p>Keep the original PST and the first working copy until the new export is verified. Remove only clearly labeled test copies.</p>
+<p><a href="/#consult">Ask for help with this exact symptom</a> · <a href="/guides/">All troubleshooting guides</a></p>
