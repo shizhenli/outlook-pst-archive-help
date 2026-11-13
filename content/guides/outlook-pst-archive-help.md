@@ -1,7 +1,8 @@
----
+﻿---
 title: "Outlook PST Export Missing Folders: Check the Scope"
 description: "A practical first-pass check for Classic Outlook PST Archive Help."
 date: 2026-11-13
+draft: true
 ---
 <p>A PST export is only as complete as the selected root. I verify folder count and open the archive before handover.</p>
 <h2>1. Reproduce the exact failure</h2>
@@ -12,4 +13,5 @@ date: 2026-11-13
 <p>Record the old value, apply one change, retest, and keep the result. If the change does not fix it, roll it back before trying the next path.</p>
 <h2>4. Handover test</h2>
 <p>Repeat the successful test after a restart or reconnect. A fix that only works in the current session is not ready for handover.</p>
-<p><a href="/">Back to the service page</a> · <a href="mailto:hello@handytasklab.com?subject=Classic%20Outlook%20PST%20Archive%20Help%20question&body=Source%3A%20outlook-pst-archive-help">Ask about this exact symptom</a></p>
+<p><a href="/">Back to the service page</a> 路 <a href="mailto:hello@handytasklab.com?subject=Classic%20Outlook%20PST%20Archive%20Help%20question&body=Source%3A%20outlook-pst-archive-help">Ask about this exact symptom</a></p>
+
