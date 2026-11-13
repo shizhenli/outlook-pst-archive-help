@@ -1,7 +1,7 @@
 baseURL = "https://outlook-pst-archive-help.pages.dev/"
 languageCode = "en-us"
 title = "Outlook PST Archive Help"
-enableRobotsTXT = true
+enableRobotsTXT = false
 disableKinds = ["taxonomy", "term"]
 [params]
 source = "outlook-pst-archive-help"
