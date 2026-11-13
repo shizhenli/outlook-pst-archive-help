@@ -1,0 +1,11 @@
+baseURL = "https://outlook-pst-archive-help.pages.dev/"
+languageCode = "en-us"
+title = "Classic Outlook PST Archive Help"
+enableRobotsTXT = true
+[params]
+description = "Archive a classic Outlook PST locally, preserve folders, and verify the archive opens."
+category = "PC & Mac"
+source = "outlook-pst-archive-help"
+email = "hello@handytasklab.com"
+[markup.goldmark.renderer]
+unsafe = true
