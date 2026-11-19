@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outlook-pst.handytasklab.com/sitemap.xml
